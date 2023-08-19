@@ -18,7 +18,7 @@
       <div class="flex flex-col lg:flex-row">
         <!-- shape container  -->
         <div
-          class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mt-10"
+          class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 mt-10"
         >
           <!-- first-card  -->
           <div class="card w-[330px] bg-base-100 shadow-xl">
@@ -147,9 +147,51 @@
             </div>
           </div>
         </div>
+        <!-- fourth-card  -->
+        <div class="card w-[330px] bg-base-100 shadow-xl">
+          <figure>
+            <img src="./images/ellipse.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title justify-center">Ellipse</h2>
+            <p class="text-center">Area (A) = πab</p>
+            <p>
+              <input
+                type="text"
+                class="ml-2 border bg-gray-200 text-xl w-20 px-2"
+                name=""
+                id="ellipse-major-radius"
+                placeholder="major radius"
+              />
+              <span class="ml-2">cm</span>
+              <input
+                type="text"
+                class="ml-2 border bg-gray-200 text-xl w-20 px-2"
+                name=""
+                id="ellipse-minor-radius"
+                placeholder="minor radius"
+              />
+              <span class="ml-2">cm</span>
+            </p>
+            <p class="text-3xl">
+              Area:
+              <span class="font-bold" id="ellipse-area">00</span> cm<sup>2</sup>
+            </p>
+            <div class="card-actions">
+              <button
+                onclick="calculateEllipseArea()"
+                class="btn btn-primary w-full"
+              >
+                Calculate
+              </button>
+            </div>
+          </div>
+        </div>
+
         <!-- area calculator  -->
         <div class="w-[250px]">
           <div class="text-3xl text-center">Area Calculator</div>
+          <div id="calculation-entry"></div>
         </div>
       </div>
     </main>
